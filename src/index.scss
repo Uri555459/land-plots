@@ -1,0 +1,47 @@
+@import "~reset-css";
+
+:root {
+  --ff: "Source Serif Pro", serif;
+  --base-size: 16px;
+  --accent-color: #397351;
+  --accent-dark-color: #2a4c38;
+
+  --fw-reg: 400;
+  --fw-med: 600;
+  --fw-bol: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--base-size);
+  font-weight: var(--fw-reg);
+  color: white;
+  min-width: 375px;
+  overflow-x: hidden;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: var(--ff);
+  cursor: pointer;
+}
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 25px;
+}

@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  max-width: 1920px;
+  position: fixed;
+  top: 0;
+  left: auto;
+  background: #2e5940;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+  }
+}
+.logo {
+  a {
+    display: block;
+    svg {
+      position: relative;
+      top: 4px;
+    }
+  }
+}
+
+.menu {
+  &__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__text {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    font-weight: var(--fw-med);
+    color: white;
+    margin-left: 10px;
+  }
+}
