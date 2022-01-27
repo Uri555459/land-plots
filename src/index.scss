@@ -19,11 +19,14 @@
 body {
   font-family: var(--ff);
   font-size: var(--base-size);
-  line-height: 18px;
+  line-height: 1.1;
   font-weight: var(--fw-reg);
   color: white;
   min-width: 375px;
   overflow-x: hidden;
+}
+div {
+  position: relative;
 }
 button {
   margin: 0;
@@ -33,6 +36,7 @@ button {
   font-family: var(--ff);
   cursor: pointer;
 }
+
 svg {
   max-width: 100%;
   max-height: 100%;
@@ -59,4 +63,7 @@ svg {
 .item-title {
   font-weight: var(--fw-med);
   font-size: 16px;
+  &--dark {
+    color: var(--accent-dark-color);
+  }
 }

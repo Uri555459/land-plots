@@ -6,7 +6,7 @@ export const Offer = () => {
     <div className="offer">
       <div
         className="offer__bg"
-        style={{ background: "url(images/offer.jpg)" }}
+        style={{ backgroundImage: "url(images/offer.jpg)" }}
       />
       <div className="offer__content">
         <div className="container">
