@@ -1,0 +1,11 @@
+.footer {
+  background-color: var(--accent-dark-color);
+  &__inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container {
+    padding: 25px;
+    // padding: 0;
+  }
+}

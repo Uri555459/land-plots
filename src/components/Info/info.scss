@@ -1,0 +1,19 @@
+.info {
+  &__time {
+    font-weight: var(--fw-med);
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  &__tel {
+    display: flex;
+    margin-bottom: 30px;
+    font-weight: var(--fw-med);
+    span {
+      margin-right: 10px;
+    }
+    a {
+      color: var(--accent-color);
+      font-size: 19px;
+    }
+  }
+}
