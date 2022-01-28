@@ -1,11 +1,27 @@
 .arrangement-village {
   background: #e9f2ed;
+  .container {
+    padding: 0;
+  }
   &__inner {
+  }
+  .section-title {
+    padding-left: 25px;
+    padding-right: 25px;
   }
   &__item {
     &-title-wrap {
+      padding: 30px 25px;
+      display: flex;
+      align-items: center;
+      background: rgba(57, 128, 87, 0.1);
+      svg {
+        margin-right: 15px;
+      }
     }
     &-descr {
+      padding: 25px;
+      color: var(--accent-color);
     }
   }
 }

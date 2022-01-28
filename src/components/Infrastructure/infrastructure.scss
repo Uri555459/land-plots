@@ -1,0 +1,45 @@
+.infrastructure {
+  background-color: var(--accent-color);
+  &__descr {
+  }
+  &__inner {
+  }
+  &__image-wrap {
+  }
+  &__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 90%;
+    margin: 0 -25px;
+    &-overlay {
+      display: flex;
+      align-items: center;
+      padding: 30px 25px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(
+          0deg,
+          rgba(57, 128, 87, 0.5),
+          rgba(57, 128, 87, 0.5)
+        ),
+        rgba(56, 102, 75, 0.5);
+      background-blend-mode: color, normal;
+      svg {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__items {
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    svg {
+      margin-right: 20px;
+    }
+  }
+}
