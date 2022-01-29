@@ -5,7 +5,6 @@ import { Gallery } from "./components/Gallery/Gallery";
 import { Header } from "./components/Header/Header";
 import { IndividualOffer } from "./components/IndividualOffer/IndividualOffer";
 import Infrastructure from "./components/Infrastructure/Infrastructure";
-import Map from "./components/Map/Map";
 import { Offer } from "./components/Offer/Offer";
 import { SectitonDescr } from "./components/SectitonDescr/SectitonDescr";
 import { LayoutDefault } from "./layouts/LayoutDefault";
