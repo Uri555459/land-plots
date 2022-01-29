@@ -3,3 +3,23 @@
     bottom: 0;
   }
 }
+
+@media (min-width: 576px) {
+  .gallery {
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide {
+      height: 400px !important;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .gallery {
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide {
+      height: 500px !important;
+    }
+  }
+}

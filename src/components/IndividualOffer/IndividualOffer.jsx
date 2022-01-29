@@ -4,7 +4,10 @@ import "./individual-offer.scss";
 
 export const IndividualOffer = () => {
   return (
-    <section className="individual-offer">
+    <section
+      className="individual-offer"
+      style={{ backgroundImage: "url(images/individual-offer-bg.jpg)" }}
+    >
       <div className="container">
         <div className="individual-offer__inner">
           <div className="individual-offer__content">

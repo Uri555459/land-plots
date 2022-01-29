@@ -25,3 +25,35 @@
     }
   }
 }
+
+@media (min-width: 991px) {
+  .arrangement-village {
+    padding-bottom: 100px;
+    background: #e9f2ed;
+    .container {
+      padding: 0 90px;
+    }
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+    }
+    &__item {
+      &-title-wrap {
+        padding: 0;
+        background-color: transparent;
+        margin-bottom: 25px;
+      }
+      &-descr {
+        padding: 0;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .arrangement-village {
+    &__inner {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

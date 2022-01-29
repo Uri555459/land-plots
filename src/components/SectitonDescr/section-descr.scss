@@ -2,3 +2,19 @@
   background-color: var(--accent-dark-color);
   padding-bottom: 30px;
 }
+@media (min-width: 991px) {
+  .section-descr {
+    padding-bottom: 120px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__inner {
+      display: flex;
+    }
+    &__col {
+      &:first-child {
+        margin-right: 90px;
+      }
+    }
+  }
+}

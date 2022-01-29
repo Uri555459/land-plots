@@ -6,6 +6,28 @@
   }
   .container {
     padding: 25px;
-    // padding: 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 991px) {
+  .footer {
+    &__inner {
+      flex-direction: row;
+      align-items: center;
+    }
+    .map-wrap {
+      width: 50%;
+    }
+    .container {
+      width: auto;
+    }
+    .info {
+      display: block;
+    }
   }
 }

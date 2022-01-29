@@ -8,7 +8,7 @@ export const SeeLive = () => {
       style={{ backgroundImage: "url(images/see-live-bg.jpg)" }}
     >
       <div className="container">
-        <div className="h2 section-title"></div>
+        <div className="h2 section-title">Хотите увидить вживую?</div>
         <Form />
       </div>
     </section>

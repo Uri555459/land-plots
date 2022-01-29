@@ -2,7 +2,7 @@ import "./section-descr.scss";
 
 export const SectitonDescr = () => {
   return (
-    <section className="section-descr">
+    <section className="section-descr" id="about">
       <div className="container">
         <div className="section-descr__inner">
           <div className="section-descr__col">

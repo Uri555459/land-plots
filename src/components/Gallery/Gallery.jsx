@@ -11,7 +11,7 @@ import "./gallery.scss";
 
 export const Gallery = () => {
   return (
-    <section className="gallery">
+    <section className="gallery" id="gallery">
       <div className="container">
         <h2 className="section-title section-title--dark">Галлерея</h2>
       </div>
@@ -20,8 +20,8 @@ export const Gallery = () => {
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={0}
-        slidesPerView={1}
-        // navigation
+        slidesPerView={window.innerWidth > 991 ? 2 : 1}
+        navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >

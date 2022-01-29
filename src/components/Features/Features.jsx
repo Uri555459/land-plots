@@ -1,20 +1,10 @@
-// import { useState } from "react";
 import { SvgSprite } from "../SvgSprite";
+
 import "./features.scss";
 
 export const Features = () => {
-  // let windowInnerWidth = window.innerWidth;
-  // const [windowWidth, setWindowWidth] = useState(windowInnerWidth);
-  // // const windowInnerHeight = window.innerHeight;
-
-  // window.addEventListener("resize", () => {
-  //   windowInnerWidth = window.innerWidth;
-  //   setWindowWidth(windowInnerWidth);
-  //   console.log(windowWidth);
-  // });
-
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="container">
         <h3 className="section-title section-title--dark">Преимущества</h3>
         <div className="features__inner">
@@ -31,6 +21,9 @@ export const Features = () => {
               </div>
             </div>
             <div className="features__item-col">
+              <h4 className="item-title item-title--desctop">
+                Смешанный лес и выход к озеру
+              </h4>
               <p className="features__item-descr">
                 Часть участков граничит с лесом. Это не только прекрасный вид,
                 но и свежий лесной воздух, осенние походы за грибами и летний
@@ -53,6 +46,9 @@ export const Features = () => {
               </div>
             </div>
             <div className="features__item-col">
+              <h4 className="item-title item-title--desctop">
+                Любая деятельность
+              </h4>
               <p className="features__item-descr">
                 Вы можете засадить участок деревьями, соорудить бассейн или
                 искусственный водоем, посадить овощи и пр. Разрешено все, кроме
@@ -73,6 +69,9 @@ export const Features = () => {
               </div>
             </div>
             <div className="features__item-col">
+              <h4 className="item-title item-title--desctop">
+                Местное самоуправление
+              </h4>
               <p className="features__item-descr">
                 После того как все участки будут проданы, поселком будет
                 управлять собрание собственников, в которое войдете вы, как один
@@ -93,6 +92,9 @@ export const Features = () => {
               </div>
             </div>
             <div className="features__item-col">
+              <h4 className="item-title item-title--desctop">
+                Возможность прописки
+              </h4>
               <p className="features__item-descr">
                 Вы можете засадить участок деревьями, соорудить бассейн или
                 искусственный водоем, посадить овощи и пр. Разрешено все, кроме
@@ -113,6 +115,9 @@ export const Features = () => {
               </div>
             </div>
             <div className="features__item-col">
+              <h4 className="item-title item-title--desctop">
+                Приватизация не нужна
+              </h4>
               <p className="features__item-descr">
                 Участки в поселке не нужно приватизировать, они становятся вашей
                 собственностью сразу после подписания договора купли-продажи
@@ -132,6 +137,9 @@ export const Features = () => {
               </div>
             </div>
             <div className="features__item-col">
+              <h4 className="item-title item-title--desctop">
+                Круглогодичное проживание
+              </h4>
               <p className="features__item-descr">
                 Вы можете засадить участок деревьями, соорудить бассейн или
                 искусственный водоем, посадить овощи и пр. Разрешено все, кроме

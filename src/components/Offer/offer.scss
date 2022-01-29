@@ -1,13 +1,22 @@
 .offer {
+  background-color: var(--accent-color);
   &__bg {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 100%;
+    padding-bottom: 60%;
+    &::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+    }
   }
   &__content {
-    background-color: var(--accent-color);
     padding-bottom: 30px;
   }
   &__title {
@@ -15,8 +24,7 @@
     font-weight: var(--fw-med);
     letter-spacing: -0.03em;
     position: relative;
-    top: -16px;
-    margin-bottom: 30px;
+    top: -40px;
   }
   &__descr {
     font-size: 20px;
@@ -47,6 +55,48 @@
     span {
       display: flex;
       flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .offer__bg {
+    padding-bottom: 50%;
+  }
+}
+
+@media (min-width: 767px) {
+  .offer {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    &__bg {
+      padding-bottom: 0;
+    }
+    &__content {
+      padding-top: 50px;
+    }
+    &__title {
+      top: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .offer {
+    &__content {
+      padding-top: 190px;
+      .container {
+        padding-right: 25px;
+      }
+    }
+    &__title {
+      font-size: 114px;
+      position: absolute;
+      top: -155px;
+      left: 90px;
     }
   }
 }

@@ -4,7 +4,7 @@ import "./infrastructure.scss";
 
 export const Infrastructure = () => {
   return (
-    <section className="infrastructure">
+    <section className="infrastructure" id="infrastructure">
       <div className="container">
         <h2 className="section-title">Инфраструктура</h2>
         <p className="infrastructure__descr">
@@ -30,23 +30,23 @@ export const Infrastructure = () => {
             </div>
           </div>
           <div className="infrastructure__items">
-            <div className="infrastructure__item">
+            <div className="infrastructure__item infrastructure__item--1">
               <SvgSprite id="infrastructure-2" />
               <h4 className="item-title">Продуктовые магазины</h4>
             </div>
-            <div className="infrastructure__item">
+            <div className="infrastructure__item infrastructure__item--2">
               <SvgSprite id="infrastructure-3" />
               <h4 className="item-title">Аптеки</h4>
             </div>
-            <div className="infrastructure__item">
+            <div className="infrastructure__item infrastructure__item--3">
               <SvgSprite id="infrastructure-4" />
               <h4 className="item-title">Школа</h4>
             </div>
-            <div className="infrastructure__item">
+            <div className="infrastructure__item infrastructure__item--4">
               <SvgSprite id="infrastructure-5" />
               <h4 className="item-title">Садовый рынок</h4>
             </div>
-            <div className="infrastructure__item">
+            <div className="infrastructure__item infrastructure__item--5">
               <SvgSprite id="infrastructure-6" />
               <h4 className="item-title">Сельскохозяйственный рынок</h4>
             </div>
