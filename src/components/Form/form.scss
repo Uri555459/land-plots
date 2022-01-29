@@ -45,10 +45,10 @@
     opacity: 0;
     & + span {
       position: absolute;
-      top: 0;
+      top: 4px;
       left: 0;
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       border: 2px solid #fff;
       display: inline-block;
       border-radius: 2px;
@@ -58,7 +58,7 @@
     }
     &:checked {
       & + span {
-        border: none;
+        border: none !important;
         svg {
           display: block;
         }
@@ -71,6 +71,9 @@
   button {
     margin-top: 55px;
   }
+}
+.form-success {
+  text-align: center;
 }
 
 @media (min-width: 767px) {

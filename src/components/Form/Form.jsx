@@ -1,10 +1,14 @@
+import { useContext } from "react";
+import { ModalContext } from "../../context/ModalContext/ModalContext";
 import { Button } from "../Button/Button";
 import { SvgSprite } from "../SvgSprite";
 import "./form.scss";
 
-export const Form = () => {
+export const Form = ({ mail }) => {
+  const { formSubmit, formPolicyHandler, isChecked } = useContext(ModalContext);
+
   return (
-    <form className="form">
+    <form className="form" onSubmit={(e) => formSubmit(e)}>
       <div className="form__col">
         <div className="form__input-wrap">
           <input
@@ -16,6 +20,18 @@ export const Form = () => {
           />
           <SvgSprite id="user" />
         </div>
+        {mail && (
+          <div className="form__input-wrap">
+            <input
+              className="form__input"
+              type="email"
+              name="email"
+              required
+              placeholder="Email"
+            />
+            <SvgSprite id="mail" />
+          </div>
+        )}
         <div className="form__input-wrap">
           <input
             className="form__input"
@@ -33,6 +49,8 @@ export const Form = () => {
             className="form__input-checkbox"
             type="checkbox"
             name="policy"
+            onChange={formPolicyHandler}
+            checked={isChecked}
           />
           <span>
             <SvgSprite id="check" />

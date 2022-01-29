@@ -1,0 +1,81 @@
+.modal {
+  width: 100%;
+  max-width: 500px;
+  min-width: 375px;
+  background: #e9f2ed;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  .arrow-close {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(42, 77, 56, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: var(--fw-med);
+    color: var(--color-dark);
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  &__descr {
+    font-size: 20px;
+    color: var(--color-dark);
+    opacity: 0.8;
+    margin-bottom: 25px;
+  }
+  .form {
+    &__input {
+      color: var(--color-dark);
+      border: 2px solid rgba(46, 89, 64, 0.3);
+      &::placeholder {
+        color: rgba(46, 89, 64, 0.3);
+      }
+      &-wrap {
+        svg {
+          path {
+            fill: #2e59404d;
+          }
+        }
+      }
+    }
+    &__input-checkbox {
+      & + span {
+        border: 2px solid #398057;
+        svg {
+          path {
+            fill: #398057;
+          }
+        }
+      }
+    }
+    &__label {
+      span {
+        color: rgba(57, 128, 87, 0.7);
+        a {
+          color: rgba(46, 89, 64, 0.5);
+        }
+      }
+    }
+  }
+}

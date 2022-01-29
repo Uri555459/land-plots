@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { ModalContext } from "../../context/ModalContext/ModalContext";
 import { Button } from "../Button/Button";
 import "./info.scss";
 
 export const Info = () => {
+  const { modalOpen } = useContext(ModalContext);
+
   return (
     <div className="info">
       <div className="info__time">
@@ -11,7 +15,11 @@ export const Info = () => {
         <span>Телефон:</span>
         <a href="tel:+71234567890">+7 (123) 456 7890</a>
       </div>
-      <Button classes="button button--green" text="Открыть в картах" />
+      <Button
+        buttonHandler={modalOpen}
+        classes="button button--green"
+        text="Оставить заявку"
+      />
     </div>
   );
 };

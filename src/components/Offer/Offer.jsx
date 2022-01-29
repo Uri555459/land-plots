@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { ModalContext } from "../../context/ModalContext/ModalContext";
 import { Button } from "../Button/Button";
 import "./offer.scss";
 
 export const Offer = () => {
+  const { modalOpen } = useContext(ModalContext);
+
   return (
     <div className="offer">
       <div
@@ -47,7 +51,11 @@ export const Offer = () => {
               </span>
             </div>
           </div>
-          <Button classes="button" text="Выбрать участок" />
+          <Button
+            buttonHandler={modalOpen}
+            classes="button"
+            text="Оставить заявку"
+          />
         </div>
       </div>
     </div>
