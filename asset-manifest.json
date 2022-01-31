@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/land-plots/static/css/main.00619af2.css",
+    "main.js": "/land-plots/static/js/main.b6914509.js",
+    "index.html": "/land-plots/index.html",
+    "main.00619af2.css.map": "/land-plots/static/css/main.00619af2.css.map",
+    "main.b6914509.js.map": "/land-plots/static/js/main.b6914509.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00619af2.css",
+    "static/js/main.b6914509.js"
+  ]
+}
